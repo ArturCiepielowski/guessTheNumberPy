@@ -1,7 +1,7 @@
 import random
 print("Welcome to the Number Guessing Game!\nI am thinking of number between 1 and 100.")
 dificultyChoice = input("Choose dificlty. Type 'easy' or 'hard': ")
-
+number = random.randint(1,100)
 
 def dificulty():
     if dificultyChoice == "easy":
