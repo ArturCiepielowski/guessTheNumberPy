@@ -12,7 +12,14 @@ def dificulty():
 
 
 game = True
-
+lifes= dificulty()
 while game :
-    print("Game continues")
+
+    print(f"You have {lifes} attempts remaining to guess the number. ")
+    lifes = lifes -1
+    if lifes == 0 :
+        print("Game Over")
+        game = False
+
+
 
