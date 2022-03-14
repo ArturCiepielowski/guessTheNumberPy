@@ -16,6 +16,16 @@ lifes= dificulty()
 while game :
 
     print(f"You have {lifes} attempts remaining to guess the number. ")
+    guess=int(input("Make a guess: "))
+    
+    if guess == number :
+        print("You have won ")
+        game = False
+    elif guess > number:
+        print("Too high try lower")
+    elif guess < number:
+        print("Too low try higher")     
+    
     lifes = lifes -1
     if lifes == 0 :
         print("Game Over")
